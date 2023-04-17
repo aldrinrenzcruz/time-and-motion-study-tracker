@@ -1,0 +1,85 @@
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.no-highlight {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  max-width: 20px;
+  overflow: auto;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th::-webkit-scrollbar,
+td::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.tasks-container {
+  margin-bottom: 20px;
+}
+
+.aux-btn-container {
+  float: right;
+}
+
+.aux-btn-container button {
+  font-size: 13px;
+  border: none;
+}
+
+#restore-default-btn {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 13px;
+}
+
+#restore-default-btn:hover {
+  color: blue;
+  cursor: pointer;
+}

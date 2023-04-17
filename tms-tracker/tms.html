@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Editorial tools">
+  <meta name="author" content="Aldrin Cruz">
+  <title>TMS Tracker</title>
+  <script src="sheetjs.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+</head>
+
+<body>
+  <div class="aux-btn-container no-highlight">
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="deleteTask()">Delete Task</button>
+    <button onclick="resetTableData();">Reset Table Data</button>
+    <button id="export">Export Data</button>
+  </div>
+  <h1 class="no-highlight">TMS Tracker</h1>
+  <div class="tasks-container no-highlight">
+    <label for="task">Task:</label>
+    <select id="task">
+      <option value="">Choose a task</option>
+      <option value="AUC">AUC</option>
+      <option value="AUV">AUV</option>
+      <option value="Charting">Charting</option>
+      <option value="Cite Corrections">Cite Corrections</option>
+      <option value="Editor Charting">Editor Charting</option>
+      <option value="General Edit">General Edit</option>
+      <option value="HAE">HAE</option>
+      <option value="HCSE">HCSE</option>
+      <option value="Harmonization">Harmonization</option>
+      <option value="ICCE Exception">ICCE Exception</option>
+      <option value="Noted Under">Noted Under</option>
+      <option value="Notes Placement">Notes Placement</option>
+      <option value="Notes Writing">Notes Writing</option>
+      <option value="PDU">PDU Review</option>
+      <option value="Print Proof Corrections Compare">Print Proof Corrections Compare</option>
+      <option value="Print Proof Review">Print Proof Review</option>
+      <option value="REC">REC</option>
+      <option value="Rescheming">Rescheming</option>
+    </select>
+    <button id="start">Start</button>
+    <button id="end" disabled>End</button>
+  </div>
+  <table id="output">
+    <tr class="no-highlight">
+      <th>Task</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Time Elapsed</th>
+      <th>Count</th>
+      <th>Comment</th>
+    </tr>
+  </table>
+  <span id="restore-default-btn" onclick="deleteSavedData();">Restore Default</span>
+  <script src="main.js"></script>
+</body>
+
+</html>
